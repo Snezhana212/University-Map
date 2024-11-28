@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_282b6a9bb99b94d83bad31b1da6086da {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_282b6a9bb99b94d83bad31b1da6086da" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_282b6a9bb99b94d83bad31b1da6086da = L.map(
+                "map_282b6a9bb99b94d83bad31b1da6086da",
+                {
+                    center: [51.187, 71.41],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d6fc26631703519e313db6d6f62ee5be = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d6fc26631703519e313db6d6f62ee5be.addTo(map_282b6a9bb99b94d83bad31b1da6086da);
+        
+    
+            var polygon_6440c3a00f43099992804de075ec40ae = L.polygon(
+                [[[51.18782419820239, 71.40904389727072], [51.18787799422119, 71.40967689859824], [51.187743504056414, 71.40971981394247], [51.18776367760616, 71.40998803484396], [51.18789144321607, 71.40995584833578], [51.18793179017722, 71.41023479807333], [51.18809990213499, 71.41020261156515], [51.18797886158719, 71.40899025309042], [51.18782419820239, 71.40904389727072]]],
+                {"bubblingMouseEvents": true, "color": "#98ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98ff00", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_282b6a9bb99b94d83bad31b1da6086da);
+        
+    
+        var popup_424219dfea7b69c32c7435a8cc8cc094 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_09bfdb5f3244edbf80b7b94543308f01 = $(`<div id="html_09bfdb5f3244edbf80b7b94543308f01" style="width: 100.0%; height: 100.0%;">     <b>Био корпус</b><br>     Цвет: #98ff00<br>     Координаты: ((71.40904389727072, 51.18782419820239), (71.40967689859824, 51.18787799422119))...<br>     </div>`)[0];
+                popup_424219dfea7b69c32c7435a8cc8cc094.setContent(html_09bfdb5f3244edbf80b7b94543308f01);
+            
+        
+
+        polygon_6440c3a00f43099992804de075ec40ae.bindPopup(popup_424219dfea7b69c32c7435a8cc8cc094)
+        ;
+
+        
+    
+    
+            polygon_6440c3a00f43099992804de075ec40ae.bindTooltip(
+                `<div>
+                     Био корпус
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_d70dedb6170b81aae7fb17637d198167 = L.polygon(
+                [[[51.18746779799176, 71.4084645401235], [51.18746779799176, 71.40871130335287], [51.18624391213515, 71.40903316843466], [51.18629098526908, 71.40931211817221], [51.186862583773085, 71.40916191446738], [51.186909656275105, 71.40949450838522], [51.18676171396396, 71.40962325441794], [51.18678861260128, 71.40983783113913], [51.18758211534068, 71.40964471209006], [51.187494696216994, 71.40895806658224], [51.18783092270816, 71.40876494753317], [51.18778385114705, 71.40842162477927], [51.18746779799176, 71.4084645401235]]],
+                {"bubblingMouseEvents": true, "color": "#0b4a8b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b4a8b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_282b6a9bb99b94d83bad31b1da6086da);
+        
+    
+        var popup_e16c0d853190265066652a182e36f3bf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_60b0df13c5b9bd65a9831d46e5627664 = $(`<div id="html_60b0df13c5b9bd65a9831d46e5627664" style="width: 100.0%; height: 100.0%;">     <b>Главный корпус</b><br>     Цвет: #0b4a8b<br>     Координаты: ((71.4084645401235, 51.18746779799176), (71.40871130335287, 51.18746779799176))...<br>     </div>`)[0];
+                popup_e16c0d853190265066652a182e36f3bf.setContent(html_60b0df13c5b9bd65a9831d46e5627664);
+            
+        
+
+        polygon_d70dedb6170b81aae7fb17637d198167.bindPopup(popup_e16c0d853190265066652a182e36f3bf)
+        ;
+
+        
+    
+    
+            polygon_d70dedb6170b81aae7fb17637d198167.bindTooltip(
+                `<div>
+                     Главный корпус
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_bda0107a6b8fcb9963651fc00af2a464 = L.polygon(
+                [[[51.186156490473174, 71.40964471209006], [51.18575300373073, 71.4109321724172], [51.18598837142643, 71.4111467491384], [51.1860690686454, 71.41091071474509], [51.18592112363599, 71.41074978220419], [51.18601527051512, 71.41047083246664], [51.18617666471759, 71.4105888496633], [51.18623718739781, 71.41038500177817], [51.18607579340728, 71.41024552690939], [51.1861632152223, 71.40995584833578], [51.18633133363132, 71.4100309501882], [51.18638513139266, 71.40981637346701], [51.186156490473174, 71.40964471209006]]],
+                {"bubblingMouseEvents": true, "color": "#ffc82d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc82d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_282b6a9bb99b94d83bad31b1da6086da);
+        
+    
+        var popup_7bc537e6d8f36ea9f3e29e8ac0c8310c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7aa3a0b6b7718eacd405688242d816a4 = $(`<div id="html_7aa3a0b6b7718eacd405688242d816a4" style="width: 100.0%; height: 100.0%;">     <b>Агрономический факультет</b><br>     Цвет: #ffc82d<br>     Координаты: ((71.40964471209006, 51.186156490473174), (71.4109321724172, 51.18575300373073))...<br>     </div>`)[0];
+                popup_7bc537e6d8f36ea9f3e29e8ac0c8310c.setContent(html_7aa3a0b6b7718eacd405688242d816a4);
+            
+        
+
+        polygon_bda0107a6b8fcb9963651fc00af2a464.bindPopup(popup_7bc537e6d8f36ea9f3e29e8ac0c8310c)
+        ;
+
+        
+    
+    
+            polygon_bda0107a6b8fcb9963651fc00af2a464.bindTooltip(
+                `<div>
+                     Агрономический факультет
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_8ae89d82d5539a5d8d2744116445b16c = L.polygon(
+                [[[51.18665411925754, 71.41483746874289], [51.18670791664214, 71.41515933382468], [51.186344783077544, 71.41530953752951], [51.186304434727084, 71.41489111292319], [51.186156490473174, 71.41494475710348], [51.18621701317991, 71.41550265657858], [51.18681551122294, 71.41528807985739], [51.18676843862477, 71.41483746874289], [51.18665411925754, 71.41483746874289]]],
+                {"bubblingMouseEvents": true, "color": "#00ffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ffff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_282b6a9bb99b94d83bad31b1da6086da);
+        
+    
+        var popup_0289a7a03d68691be4cd7890f0bac3c6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_759a71da73244c5aa0ce2da001bacb4f = $(`<div id="html_759a71da73244c5aa0ce2da001bacb4f" style="width: 100.0%; height: 100.0%;">     <b>Архитектурный факультет</b><br>     Цвет: #00ffff<br>     Координаты: ((71.41483746874289, 51.18665411925754), (71.41515933382468, 51.18670791664214))...<br>     </div>`)[0];
+                popup_0289a7a03d68691be4cd7890f0bac3c6.setContent(html_759a71da73244c5aa0ce2da001bacb4f);
+            
+        
+
+        polygon_8ae89d82d5539a5d8d2744116445b16c.bindPopup(popup_0289a7a03d68691be4cd7890f0bac3c6)
+        ;
+
+        
+    
+    
+            polygon_8ae89d82d5539a5d8d2744116445b16c.bindTooltip(
+                `<div>
+                     Архитектурный факультет
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_2263a369fd9b4313d76593f5b4f94eb6 = L.polygon(
+                [[[51.18805283084862, 71.41112529146628], [51.18770988145394, 71.41086779940085], [51.18735348035924, 71.41211234438376], [51.18767625882687, 71.41236983644919], [51.18779730016944, 71.41209088671164], [51.1875955644219, 71.41191922533469], [51.18779730016944, 71.41130768167929], [51.1879452391564, 71.41141497003989], [51.18805283084862, 71.41112529146628]]],
+                {"bubblingMouseEvents": true, "color": "#bf04c2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bf04c2", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_282b6a9bb99b94d83bad31b1da6086da);
+        
+    
+        var popup_cad502d18fa6124362e592d25711a53e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b5baa0f9be17faceae2c4253763e1105 = $(`<div id="html_b5baa0f9be17faceae2c4253763e1105" style="width: 100.0%; height: 100.0%;">     <b>Технический факультет</b><br>     Цвет: #bf04c2<br>     Координаты: ((71.41112529146628, 51.18805283084862), (71.41086779940085, 51.18770988145394))...<br>     </div>`)[0];
+                popup_cad502d18fa6124362e592d25711a53e.setContent(html_b5baa0f9be17faceae2c4253763e1105);
+            
+        
+
+        polygon_2263a369fd9b4313d76593f5b4f94eb6.bindPopup(popup_cad502d18fa6124362e592d25711a53e)
+        ;
+
+        
+    
+    
+            polygon_2263a369fd9b4313d76593f5b4f94eb6.bindTooltip(
+                `<div>
+                     Технический факультет
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_f3419c83b8d18aa36edf6362250a2da2 = L.polygon(
+                [[[51.18739382779133, 71.4115973602529], [51.18704414887315, 71.41133986818747], [51.18692310555257, 71.41179047930197], [51.18723916244321, 71.41205870020346], [51.18739382779133, 71.4115973602529]]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_282b6a9bb99b94d83bad31b1da6086da);
+        
+    
+        var popup_521676086abb9beab3cc4a3a0e8a8eed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_278da0b207e8b54078b93ad88a32d206 = $(`<div id="html_278da0b207e8b54078b93ad88a32d206" style="width: 100.0%; height: 100.0%;">     <b>Технический факультет.Новый корпус</b><br>     Цвет: #ff0000<br>     Координаты: ((71.4115973602529, 51.18739382779133), (71.41133986818747, 51.18704414887315))...<br>     </div>`)[0];
+                popup_521676086abb9beab3cc4a3a0e8a8eed.setContent(html_278da0b207e8b54078b93ad88a32d206);
+            
+        
+
+        polygon_f3419c83b8d18aa36edf6362250a2da2.bindPopup(popup_521676086abb9beab3cc4a3a0e8a8eed)
+        ;
+
+        
+    
+    
+            polygon_f3419c83b8d18aa36edf6362250a2da2.bindTooltip(
+                `<div>
+                     Технический факультет.Новый корпус
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_f4c2d6f48348821083ee831312004afd = L.polygon(
+                [[[51.18748797166216, 71.41014896738486], [51.186956728729065, 71.41014896738486], [51.18666084393408, 71.40985928881125], [51.18657342306292, 71.41018115389303], [51.18649272672702, 71.41046010363058], [51.18747452254952, 71.41136132585959], [51.18775695309056, 71.41041718828635], [51.18748797166216, 71.41014896738486]]],
+                {"bubblingMouseEvents": true, "color": "#009100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009100", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_282b6a9bb99b94d83bad31b1da6086da);
+        
+    
+        var popup_05bae220e0b45c886b382a7a2f3b037e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8229adedc4cdef0af3c5e0a1b35c34ae = $(`<div id="html_8229adedc4cdef0af3c5e0a1b35c34ae" style="width: 100.0%; height: 100.0%;">     <b>Военная кафедра</b><br>     Цвет: #009100<br>     Координаты: ((71.41014896738486, 51.18748797166216), (71.41014896738486, 51.186956728729065))...<br>     </div>`)[0];
+                popup_05bae220e0b45c886b382a7a2f3b037e.setContent(html_8229adedc4cdef0af3c5e0a1b35c34ae);
+            
+        
+
+        polygon_f4c2d6f48348821083ee831312004afd.bindPopup(popup_05bae220e0b45c886b382a7a2f3b037e)
+        ;
+
+        
+    
+    
+            polygon_f4c2d6f48348821083ee831312004afd.bindTooltip(
+                `<div>
+                     Военная кафедра
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_b6ab5c438129631e5e8443da7365a781 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_06902d7221f02764a15452a4f1bfc3d4 = L.marker(
+                [51.18782419820239, 71.40904389727072],
+                {}
+            ).addTo(feature_group_b6ab5c438129631e5e8443da7365a781);
+        
+    
+            var icon_424a963f0c7ea1ad0317fb50a37edc30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_06902d7221f02764a15452a4f1bfc3d4.setIcon(icon_424a963f0c7ea1ad0317fb50a37edc30);
+        
+    
+        var popup_ae7fbc4ed0e6652c25bab560047cdf51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c055de95516303898a1334d876212451 = $(`<div id="html_c055de95516303898a1334d876212451" style="width: 100.0%; height: 100.0%;">Био корпус (фильтр)</div>`)[0];
+                popup_ae7fbc4ed0e6652c25bab560047cdf51.setContent(html_c055de95516303898a1334d876212451);
+            
+        
+
+        marker_06902d7221f02764a15452a4f1bfc3d4.bindPopup(popup_ae7fbc4ed0e6652c25bab560047cdf51)
+        ;
+
+        
+    
+    
+            var marker_67458fb0fe835fd66ac57fa7f6cc84db = L.marker(
+                [51.18746779799176, 71.4084645401235],
+                {}
+            ).addTo(feature_group_b6ab5c438129631e5e8443da7365a781);
+        
+    
+            var icon_1555964d542926d6c80170f0da24e80a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67458fb0fe835fd66ac57fa7f6cc84db.setIcon(icon_1555964d542926d6c80170f0da24e80a);
+        
+    
+        var popup_14e6ffe9492b33543527fef56245a962 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a8adac93448f039dbfab0adab0df697 = $(`<div id="html_4a8adac93448f039dbfab0adab0df697" style="width: 100.0%; height: 100.0%;">Главный корпус (фильтр)</div>`)[0];
+                popup_14e6ffe9492b33543527fef56245a962.setContent(html_4a8adac93448f039dbfab0adab0df697);
+            
+        
+
+        marker_67458fb0fe835fd66ac57fa7f6cc84db.bindPopup(popup_14e6ffe9492b33543527fef56245a962)
+        ;
+
+        
+    
+    
+            var marker_6b3869d70aa38a2ae363719ad85fcfff = L.marker(
+                [51.186156490473174, 71.40964471209006],
+                {}
+            ).addTo(feature_group_b6ab5c438129631e5e8443da7365a781);
+        
+    
+            var icon_16ccfd037143e23b1e8980e71443764c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b3869d70aa38a2ae363719ad85fcfff.setIcon(icon_16ccfd037143e23b1e8980e71443764c);
+        
+    
+        var popup_d533e24f26e5e0b39fb534df03c5eda1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee3e7215d5a445e87e2cd9fba4dd996e = $(`<div id="html_ee3e7215d5a445e87e2cd9fba4dd996e" style="width: 100.0%; height: 100.0%;">Агрономический факультет (фильтр)</div>`)[0];
+                popup_d533e24f26e5e0b39fb534df03c5eda1.setContent(html_ee3e7215d5a445e87e2cd9fba4dd996e);
+            
+        
+
+        marker_6b3869d70aa38a2ae363719ad85fcfff.bindPopup(popup_d533e24f26e5e0b39fb534df03c5eda1)
+        ;
+
+        
+    
+    
+            var marker_54aef14fa254d93e311a8529e212b932 = L.marker(
+                [51.18665411925754, 71.41483746874289],
+                {}
+            ).addTo(feature_group_b6ab5c438129631e5e8443da7365a781);
+        
+    
+            var icon_7893b2eac833d3516d0625e74d747e47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_54aef14fa254d93e311a8529e212b932.setIcon(icon_7893b2eac833d3516d0625e74d747e47);
+        
+    
+        var popup_eaf4d23e3ed410e4b5f08f342044e95c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e05c26464debb9a87e7889e9c7c6e12f = $(`<div id="html_e05c26464debb9a87e7889e9c7c6e12f" style="width: 100.0%; height: 100.0%;">Архитектурный факультет (фильтр)</div>`)[0];
+                popup_eaf4d23e3ed410e4b5f08f342044e95c.setContent(html_e05c26464debb9a87e7889e9c7c6e12f);
+            
+        
+
+        marker_54aef14fa254d93e311a8529e212b932.bindPopup(popup_eaf4d23e3ed410e4b5f08f342044e95c)
+        ;
+
+        
+    
+    
+            var marker_efe2b4248e29fbd3ffd0e912f49f0d0f = L.marker(
+                [51.18805283084862, 71.41112529146628],
+                {}
+            ).addTo(feature_group_b6ab5c438129631e5e8443da7365a781);
+        
+    
+            var icon_896bba60f5b4de4dc5ff24d3962ed17a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_efe2b4248e29fbd3ffd0e912f49f0d0f.setIcon(icon_896bba60f5b4de4dc5ff24d3962ed17a);
+        
+    
+        var popup_3545689cdc38ae2898e3cf8dda49afe0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94c32d0f0f042da38e0728a93fee30a1 = $(`<div id="html_94c32d0f0f042da38e0728a93fee30a1" style="width: 100.0%; height: 100.0%;">Технический факультет (фильтр)</div>`)[0];
+                popup_3545689cdc38ae2898e3cf8dda49afe0.setContent(html_94c32d0f0f042da38e0728a93fee30a1);
+            
+        
+
+        marker_efe2b4248e29fbd3ffd0e912f49f0d0f.bindPopup(popup_3545689cdc38ae2898e3cf8dda49afe0)
+        ;
+
+        
+    
+    
+            var marker_15c8c1361f41b54e2ec50c30ac32b010 = L.marker(
+                [51.18739382779133, 71.4115973602529],
+                {}
+            ).addTo(feature_group_b6ab5c438129631e5e8443da7365a781);
+        
+    
+            var icon_c6a4f9a24bac9b4ec5273c17566cbe7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_15c8c1361f41b54e2ec50c30ac32b010.setIcon(icon_c6a4f9a24bac9b4ec5273c17566cbe7c);
+        
+    
+        var popup_77b3ca62d937d6763c874186416cba00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_899a7d2eea485b7b15f48c9572584142 = $(`<div id="html_899a7d2eea485b7b15f48c9572584142" style="width: 100.0%; height: 100.0%;">Технический факультет.Новый корпус (фильтр)</div>`)[0];
+                popup_77b3ca62d937d6763c874186416cba00.setContent(html_899a7d2eea485b7b15f48c9572584142);
+            
+        
+
+        marker_15c8c1361f41b54e2ec50c30ac32b010.bindPopup(popup_77b3ca62d937d6763c874186416cba00)
+        ;
+
+        
+    
+    
+            var marker_a2623de99612e72028e23de39758755c = L.marker(
+                [51.18748797166216, 71.41014896738486],
+                {}
+            ).addTo(feature_group_b6ab5c438129631e5e8443da7365a781);
+        
+    
+            var icon_f99c087297a477f93b044e1a1526946c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a2623de99612e72028e23de39758755c.setIcon(icon_f99c087297a477f93b044e1a1526946c);
+        
+    
+        var popup_6e12b5455fb61d43a0315c7ec4373901 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_393bc38a66c1d69f302994f7ae9bd96c = $(`<div id="html_393bc38a66c1d69f302994f7ae9bd96c" style="width: 100.0%; height: 100.0%;">Военная кафедра (фильтр)</div>`)[0];
+                popup_6e12b5455fb61d43a0315c7ec4373901.setContent(html_393bc38a66c1d69f302994f7ae9bd96c);
+            
+        
+
+        marker_a2623de99612e72028e23de39758755c.bindPopup(popup_6e12b5455fb61d43a0315c7ec4373901)
+        ;
+
+        
+    
+    
+            feature_group_b6ab5c438129631e5e8443da7365a781.addTo(map_282b6a9bb99b94d83bad31b1da6086da);
+        
+    
+            var layer_control_29f83f040d6d41d4d9d0672067ae1c02_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_d6fc26631703519e313db6d6f62ee5be,
+                },
+                overlays :  {
+                    "\u0424\u0438\u043b\u044c\u0442\u0440 \u0437\u0434\u0430\u043d\u0438\u0439" : feature_group_b6ab5c438129631e5e8443da7365a781,
+                },
+            };
+            let layer_control_29f83f040d6d41d4d9d0672067ae1c02 = L.control.layers(
+                layer_control_29f83f040d6d41d4d9d0672067ae1c02_layers.base_layers,
+                layer_control_29f83f040d6d41d4d9d0672067ae1c02_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_282b6a9bb99b94d83bad31b1da6086da);
+
+        
+</script>
+</html>
